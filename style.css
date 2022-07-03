@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+* {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    background: rgb(72,94,121);
+    background: linear-gradient(180deg, rgba(72,94,121,0.7) 20%, rgba(50, 61, 74, 0.8) 30%, rgb(150, 156, 173) 30%, rgba(232,232,227,1) 71%, rgba(220,227,227,1) 100%) !important;
+    height: 100%;
+}
+
+.App {
+    margin: 10% auto 0;
+    width: fit-content;
+    background: rgb(220, 209, 209);
+    background: linear-gradient(0deg, rgb(223, 232, 237) 0%, rgb(243, 246, 246) 100%);
+    padding: 30px 50px 30px;
+    border-radius: 15px;
+    border: 1px solid rgb(177, 177, 177);
+    box-shadow: 0px 10px 15px rgba(56, 56, 56, 0.15);
+    color: #335566;
+}
+
+.select {
+    width: 175px;
+    margin: 0 !important;
+    box-shadow: 1px 1px 7px #C2CBD9;
+    padding: 0 !important;
+    overflow: none;
+}
+
+
+.convertRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.convertRow div {
+    padding: 0 2px;
+}
+
+.exchange {
+    padding-top: 55px !important;
+    margin: 0 10px !important;
+    cursor: pointer;
+}
+
+.inputOne, .inputTwo {
+    width: 150px;
+    height: 12px;
+    padding: 12px 3px 12px 17px;
+    border-radius: 4px;
+    border: 1px solid rgb(195, 195, 195);
+    text-align: left;
+    font-size: 0.95rem;
+    color: #335566 !important;
+}
+
+::placeholder {
+    color: #335566;
+}
+
+.inputTwo:disabled {
+    background-color: white;
+}
+
+.kwota {
+    position: relative;
+    margin: 0 20px;
+}
+
+.wynik {
+    position: relative;
+}
+
+.currOne {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    color: grey;
+}
+
+.currTwo {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    color: grey;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.btns {
+    text-align: right;
+    margin-top: 25px;
+}
+
+.historiaBtn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #335566;
+    /* border: 1px solid rgb(221, 221, 221); */
+    border: none;
+    box-shadow: 1px 2px 10px #C2CBD9;
+    
+}
+
+.wyczyscBtn {
+    background-color: #c55263;
+    color: white;
+    padding: 10px 20px;
+    margin: 55px auto 15px;
+    border-radius: 20px;
+    /* border: 1px solid rgb(221, 221, 221); */
+    border: none;
+    box-shadow: 1px 2px 10px rgba(151, 104, 104, 0.5);
+    cursor: pointer;
+}
+
+.wyczyscBtn:hover {
+    background-color: #CA163A;
+    box-shadow: 1px 2px 10px rgba(151, 104, 104, 1);
+}
+
+.historiaBtn:hover {
+    box-shadow: 1px 2px 10px #98ADCD
+}
+
+.konwertujBtn {
+    background-color: #A3B1C6;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 25px;
+    border-radius: 20px;
+    /* border: 1px solid rgb(221, 221, 221); */
+    border: none;
+    box-shadow: 1px 2px 10px rgba(117, 132, 144,0.3);
+}
+
+.konwertujBtn:hover {
+    background-color: #214456 ;
+    box-shadow: 1px 2px 10px #98ADCD;
+}
+
+.hist {
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 10px auto;
+    padding: 0px 10px;
+    font-size: 0.9rem;
+}
+
+
+.przed {
+    margin-left: 350px;
+}
+
+
+
+hr {
+    margin: -4px 0 0 0;
+    display: block; 
+    height: 1px;
+    border: 0; border-top: 1px solid #214456;
+    padding: 0;
+}
+
+.histMap {
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto 0px auto;
+    padding: 0px 10px;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.fatArrow {
+    position: absolute;
+    right: 126px;
+}
+
+.historiaSize {
+    max-height: 228px;
+    overflow-y: scroll;
+    margin-top: -1px;
+    padding-top: 1px;
+}
+
+.historiaSize {
+    overflow: hidden !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #c5cdd7; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #718087; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #223944; 
+  }
+
