@@ -12,7 +12,7 @@ html {
 }
 
 .App {
-    margin: 10% auto 0;
+    margin: 5% auto 0;
     width: fit-content;
     background: rgb(220, 209, 209);
     background: linear-gradient(0deg, rgb(223, 232, 237) 0%, rgb(243, 246, 246) 100%);
@@ -218,3 +218,56 @@ hr {
     background: #223944; 
   }
 
+  .navbar img {
+    margin: 10px;
+  }
+
+/* responsive */
+
+@media (max-width: 945px) {
+
+    .App {
+        padding: 15px 35px;
+    }
+    .convertRow {
+        flex-direction: column;
+    }
+
+    .exchange {
+        padding-top: 25px !important;
+    }
+
+    .btns {
+        text-align: center;
+        margin: 60px 0 65px;
+    }
+
+    .brak {
+        margin-top: 40px;
+    }
+    
+
+    .przed {
+        margin: 14px 5px 0 50px;
+        text-align: center !important;
+    }
+
+    .przedResponsive {
+        margin-left: -20px;
+    }
+
+    .fatArrow {
+        right: 113px !important;
+    }
+
+    .wyczyscBtn {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    body {
+        padding-bottom: 50px !important;
+        margin-bottom: 50px !important;
+    }
+
+}
